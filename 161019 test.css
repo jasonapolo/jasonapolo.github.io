@@ -69,27 +69,39 @@
 /* ------------------------------------ */
 
 .poland {
-	background-color: red;
+	background-color: #ff5c33;
 }
 
 .rome {
-	background-color: green;
+	background-color: #99cc00;
 }
 
 .hongkong {
-	background-color: orange;
+	background-color: #ffbf80;
 }
 
 .binghamton {
-	background-color: purple;
+	background-color: #d966ff;
 }
 
 .harlem {
-	background-color: aqua;
+	background-color: #ffad33;
 }
 
 .ceramics {
-	background-color: pink;
+	background-color: #ff8080;
+}
+
+.nasa {
+	background-color: #ff99cc;
+}
+
+.boston {
+	background-color: #80bfff;
+}
+
+.kochi {
+	background-color: #b07969;
 }
 
 /* ------------------------------------ */
@@ -121,7 +133,7 @@
 }
 
 .projects-list-images {
-	height: 250px;
+	height: 262.5px;
 }
 
 .projects-list-images img {
@@ -149,7 +161,15 @@
 	width: 100%;
 }
 
+.limits h4 {
+	font-size: 1.25em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: left;
+}
+
 .limits p {
-	padding-top: 0.25em;
-	padding-bottom: 0.25em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-align: left;
 }
