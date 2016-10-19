@@ -1,0 +1,155 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+/* ------------------------------------ */
+
+.navbar {
+	background-color: #999;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.navbar h1 {
+	color: #fff;
+	font-size: 3.75em;
+	font-weight: 800;
+	letter-spacing: 0.25em;
+}
+
+.navbar li {
+	color: #fff;
+	display: inline-block;
+	font-size: 1em;
+	letter-spacing: 0.2em;
+	margin-left: 1.625em;
+	margin-right: 1.625em;
+}
+
+/* ------------------------------------ */
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  11.11%   { opacity: 1; }
+  33.33%  { opacity: 1; }
+  44.44%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.fadein {
+	position: relative;
+	max-width: 800px;
+	min-width: 600px;
+	height: 600px;
+	margin: auto;
+}
+
+.fadein img { 
+	width: 100%;
+    opacity:0; 
+    animation-name: fade; 
+    animation-duration: 9s; 
+    animation-iteration-count: infinite; 
+    position:absolute; 
+    left:0; 
+    right:0; 
+}
+
+.fadein img:nth-child(1) { animation-delay: 0s; }
+.fadein img:nth-child(2) { animation-delay: 3s; }
+.fadein img:nth-child(3) { animation-delay: 6s; }
+
+/* ------------------------------------ */
+
+.poland {
+	background-color: red;
+}
+
+.rome {
+	background-color: green;
+}
+
+.hongkong {
+	background-color: orange;
+}
+
+.binghamton {
+	background-color: purple;
+}
+
+.harlem {
+	background-color: aqua;
+}
+
+.ceramics {
+	background-color: pink;
+}
+
+/* ------------------------------------ */
+
+.content {
+	width: 100%;
+	text-align: center;
+}
+
+.title {
+	text-align: center;
+	font-size: 2em;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.projects {
+	width: 100%;
+}
+
+.projects-list {
+	display: inline-block;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 100px;
+	width: 350px;
+}
+
+.projects-list-images {
+	height: 250px;
+}
+
+.projects-list-images img {
+	width: 100%;
+	height: 100%;
+}
+
+.projects-list-names {
+	color: white;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.limits {
+	max-width: 800px;
+	min-width: 600px;
+	margin: auto;
+	min-height: 300px;
+}
+
+.limits img {
+	width: 100%;
+}
+
+.limits p {
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
