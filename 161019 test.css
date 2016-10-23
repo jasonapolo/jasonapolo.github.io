@@ -159,6 +159,9 @@
 	width: 375px;
 }
 
+.projects-list img {
+	width: 100%;
+}
 
 .projects-list-names {
 	color: white;
