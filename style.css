@@ -86,6 +86,10 @@
 	background-color: #99cc00;
 }
 
+.rometext {
+	color: #99cc00;
+}
+
 .hongkong {
 	background-color: #ffbf80;
 }
@@ -120,6 +124,10 @@
 
 .boston {
 	background-color: #80bfff;
+}
+
+.bostontext {
+	color: #80bfff;
 }
 
 .kochi {
