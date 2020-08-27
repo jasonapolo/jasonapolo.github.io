@@ -20,6 +20,28 @@
 		  ga('create', 'UA-86025515-1', 'auto');
 		  ga('send', 'pageview');
 	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+	</script>
+	<script>
+		// this script is written by yazzz https://stackoverflow.com/a/35819751/9894532
+		$(function() {
+    		$("#wrapper").each(function() {
+    	    	var $wrap = $(this);
+        		function iframeScaler(){
+            		var wrapWidth = $wrap.width(); // width of the wrapper
+	        	    var wrapHeight = $wrap.height();
+    	   		    var childWidth = $wrap.children("iframe").width(); // width of child iframe
+        	    	var childHeight = $wrap.children("iframe").height(); // child height
+	            	var wScale = wrapWidth / childWidth;
+    	        	var hScale = wrapHeight / childHeight;
+        	    	var scale = Math.min(wScale,hScale);  // get the lowest ratio
+        	    	$wrap.children("iframe").css({"transform": "scale("+scale+")", "transform-origin": "left top" });  // set scale
+       			};
+        		$(window).on("resize", iframeScaler);
+        		$(document).ready( iframeScaler);
+    		});
+		});
+	</script>
 </head>
 
 <!-- BODY -->
@@ -62,7 +84,11 @@
 
 
 		<br>
-		<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS1fKYhhz8Mx3j4nSv3vxUF2F-2lm4P4SqxXYzeO9VP0iXHG-v8LwkHddn47vGok1SejHa2eOpShE6E/pubchart?oid=1970161453&amp;format=interactive" width="800" height="600"></iframe>
+		<div id="wrapper" width="100%" height="auto" >
+			<iframe width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS1fKYhhz8Mx3j4nSv3vxUF2F-2lm4P4SqxXYzeO9VP0iXHG-v8LwkHddn47vGok1SejHa2eOpShE6E/pubchart?oid=1970161453&amp;format=interactive"></iframe>
+		</div>
+		<iframe width="600" height="400" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS1fKYhhz8Mx3j4nSv3vxUF2F-2lm4P4SqxXYzeO9VP0iXHG-v8LwkHddn47vGok1SejHa2eOpShE6E/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+		
 		<br>
 
 
